@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Naveen C â€” Full Stack Developer building web applications with Python, Flask, Django, SQL and cloud technologies. B.Tech Computer Science and Engineering, 2026.">
+  <meta name="author" content="Naveen C">
+  <meta name="theme-color" content="#05060d">
+  <meta property="og:title" content="Naveen C â€” Full Stack Developer">
+  <meta property="og:description" content="Portfolio of Naveen C, a Full Stack Developer working with Python, Flask, Django, SQL and AWS.">
+  <meta property="og:type" content="website">
+  <title>C Naveen  â€” Full Stack Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span class="brand-text">Naveen<span class="brand-dot">.</span></span>
+        <span class="sr-only">C Naveen , back to home</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about" data-nav>About</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#education" data-nav>Education</a>
+        <a href="#certifications" data-nav>Certifications</a>
+        <a href="#contact" data-nav>Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm header-cta" href="#contact">
+          Let's talk
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" inert>
+    <nav aria-label="Mobile navigation">
+      <a class="mobile-link" href="#home"><span>01</span>Home</a>
+      <a class="mobile-link" href="#about"><span>02</span>About</a>
+      <a class="mobile-link" href="#skills"><span>03</span>Skills</a>
+      <a class="mobile-link" href="#projects"><span>04</span>Projects</a>
+      <a class="mobile-link" href="#education"><span>05</span>Education</a>
+      <a class="mobile-link" href="#certifications"><span>06</span>Certifications</a>
+      <a class="mobile-link" href="#contact"><span>07</span>Contact</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <a href="mailto:naveenyuva47@gmail.com">naveenyuva47@gmail.com</a>
+      <div class="social-list" role="group" aria-label="Social profiles">
+        <a class="social-link" href="https://www.linkedin.com/in/naveen-c-0376b834b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a class="social-link" href="https://github.com/NaveenRayas" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a class="social-link" href="mailto:naveenyuva47@gmail.com" aria-label="Email Naveen C">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Open to full-time opportunities</p>
+          <h1 class="hero-title" id="heroTitle">Naveen <span class="grad-text">C</span></h1>
+          <p class="hero-role">Full Stack Developer<span class="role-divider" aria-hidden="true"></span>B.Tech CSE, 2026</p>
+          <p class="hero-typed" aria-hidden="true">I enjoy <span class="typed-text" id="typedText">building full-stack web applications</span><span class="caret"></span></p>
+          <p class="sr-only">I enjoy building full-stack web applications, working with Flask and Django, designing SQL databases and  AWS cloud.</p>
+          <p class="hero-lead">Computer Science and Engineering graduate building practical web applications with Python, Flask, Django and SQL, with a growing focus on cloud technologies.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              View projects
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-5-5 5 5 5-5"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              Contact me
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="hero-footer">
+            <ul class="social-list" aria-label="Social profiles">
+              <li>
+                <a class="social-link" href="https://www.linkedin.com/in/naveen-c-0376b834b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                  <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="https://github.com/NaveenRayas" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                  <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="mailto:naveenyuva47@gmail.com" aria-label="Email Naveen C">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+                </a>
+              </li>
+            </ul>
+            <p class="hero-location">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              India <span aria-hidden="true">Â·</span> English, Kannada, Telugu
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-wrap">
+            <div class="portrait-glow" aria-hidden="true"></div>
+            <div class="portrait-orb" aria-hidden="true"></div>
+            <div class="portrait-ring ring-one" aria-hidden="true"></div>
+            <div class="portrait-ring ring-two" aria-hidden="true"></div>
+            <div class="portrait-frame">
+              <div class="portrait-initials" aria-hidden="true">NC</div>
+              <img class="portrait-img" src="assets/profile.jpg" alt="Portrait of Naveen C, Full Stack Developer" width="800" height="1000" fetchpriority="high">
+              <span class="portrait-shade" aria-hidden="true"></span>
+            </div>
+            <div class="float-card float-card-python" aria-hidden="true"><span class="float-icon">Py</span>Python</div>
+            <div class="float-card float-card-django" aria-hidden="true"><span class="float-icon">Dj</span>Django</div>
+            <div class="float-card float-card-cloud" aria-hidden="true">
+              <span class="float-icon">
+                <svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.4-7.98A5.5 5.5 0 0 1 17.3 9.2 3.5 3.5 0 0 1 17 18H7Z"/></svg>
+              </span>
+              AWS
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+        Scroll to explore
+      </a>
+    </section>
+
+    <div class="tech-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Python</span><i></i><span>Flask</span><i></i><span>Django</span><i></i><span>JavaScript</span><i></i><span>MySQL</span><i></i><span>PostgreSQL</span><i></i><span>AWS</span><i></i><span>Git</span><i></i>
+        </div>
+        <div class="marquee-group">
+          <span>Python</span><i></i><span>Flask</span><i></i><span>Django</span><i></i><span>JavaScript</span><i></i><span>MySQL</span><i></i><span>PostgreSQL</span><i></i><span>AWS</span><i></i><span>Git</span><i></i>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span>02</span> About me</p>
+          <h2 class="section-title" id="aboutTitle">Curious about the <span class="grad-text">whole stack</span>.</h2>
+          <p class="section-intro">From the database schema to the final interface, I like understanding how the pieces fit together and making them work reliably.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">I'm Naveen, a Computer Science and Engineering graduate from Dr. Samuel George Institute of Engineering and Technology.</p>
+            <p>I turn ideas into working web applications, from server-side logic and relational data models to the interface people actually use. My foundation is in Python and SQL, with hands-on project experience in Flask and Django.</p>
+            <p>I've built a venue booking system, an NLP-powered fake news detection tool and an academy management platform. Alongside development, I'm strengthening my cloud skills with AWS.</p>
+            <div class="objective">
+              <span class="objective-label">Career objective</span>
+              <p>To grow as a full stack developer by building well-structured software, contributing to a strong engineering team and learning continuously.</p>
+            </div>
+          </div>
+
+          <aside class="about-card reveal" aria-label="Quick facts about Naveen">
+            <div class="about-card-head"><span class="about-card-dot" aria-hidden="true"></span>At a glance</div>
+            <dl class="fact-list">
+              <div><dt>Education</dt><dd>B.Tech Computer Science and Engineering</dd></div>
+              <div><dt>College</dt><dd>Dr. Samuel George Institute of Engineering and Technology</dd></div>
+              <div><dt>Duration</dt><dd>2022 â€” 2026</dd></div>
+              <div><dt>Location</dt><dd>India</dd></div>
+              <div><dt>Languages</dt><dd>English, Kannada, Telugu</dd></div>
+            </dl>
+            <div class="exploring">
+              <span>Currently exploring</span>
+              <div class="tag-row"><span class="tag">AWS</span><span class="tag">Cloud</span></div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="focus-grid" data-stagger>
+          <article class="focus-card reveal">
+            <span class="focus-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg>
+            </span>
+            <h3>End-to-end web apps</h3>
+            <p>Complete application flows, including authentication, booking logic, dashboards and responsive interfaces.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6M4 11.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            </span>
+            <h3>Backend &amp; data</h3>
+            <p>APIs, relational schemas and SQL queries with Python, Flask, Django, MySQL and PostgreSQL.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.4-7.98A5.5 5.5 0 0 1 17.3 9.2 3.5 3.5 0 0 1 17 18H7Z"/></svg>
+            </span>
+            <h3>Cloud </h3>
+            <p>A growing focus on AWS and the practical side of deploying and running web applications in the cloud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span>03</span> Skills</p>
+          <h2 class="section-title" id="skillsTitle">The tools I <span class="grad-text">work with</span>.</h2>
+          <p class="section-intro">A practical toolkit organized by the part of the stack, not by arbitrary percentages.</p>
+        </div>
+
+        <div class="skills-grid" data-stagger>
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span>
+              <div><h3>Programming</h3><p>Core languages</p></div>
+            </div>
+            <ul class="skill-tags"><li>Python</li><li>JavaScript</li><li>SQL</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></span>
+              <div><h3>Frontend</h3><p>Interface development</p></div>
+            </div>
+            <ul class="skill-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01M12 7.5h5M12 16.5h5"/></svg></span>
+              <div><h3>Backend</h3><p>Server-side development</p></div>
+            </div>
+            <ul class="skill-tags"><li>Python</li><li>Flask</li><li>Django</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6M4 11.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg></span>
+              <div><h3>Databases</h3><p>Relational data</p></div>
+            </div>
+            <ul class="skill-tags"><li>MySQL</li><li>PostgreSQL</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.4-7.98A5.5 5.5 0 0 1 17.3 9.2 3.5 3.5 0 0 1 17 18H7Z"/></svg></span>
+              <div><h3>Cloud</h3><p>Deployment basics</p></div>
+            </div>
+            <ul class="skill-tags"><li>AWS</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></span>
+              <div><h3>Tools</h3><p>Daily workflow</p></div>
+            </div>
+            <ul class="skill-tags"><li>Git</li><li>GitHub</li><li>VS Code</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span>04</span> Projects</p>
+          <h2 class="section-title" id="projectsTitle">Selected <span class="grad-text">work</span>.</h2>
+          <p class="section-intro">Three projects that reflect how I approach application logic, data and the people using the product.</p>
+        </div>
+
+        <div class="projects-list">
+          <article class="project-card reveal">
+            <div class="project-media">
+              <div class="mock mock-venue" aria-hidden="true">
+                <div class="mock-top">
+                  <span class="mock-dot mock-dot-red"></span><span class="mock-dot mock-dot-yellow"></span><span class="mock-dot mock-dot-green"></span>
+                  <span class="mock-url">gudibanda-kalyana-mandapam.onrender.com</span>
+                </div>
+                <div class="mock-body venue-body">
+                  <div class="venue-head">
+                    <span class="venue-logo">GK</span>
+                    <div class="venue-title"><strong>Gudibanda Kalyana Mandapam</strong><small>Venue booking</small></div>
+                    <span class="venue-status">Available</span>
+                  </div>
+                  <div class="venue-grid">
+                    <div class="venue-panel">
+                      <small class="panel-label">Select a date</small>
+                      <div class="mini-cal">
+                        <div class="cal-head"><span>August 2026</span><span aria-hidden="true">â€¹ â€º</span></div>
+                        <div class="cal-days"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div>
+                        <div class="cal-grid">
+                          <span class="is-muted">26</span><span class="is-muted">27</span><span class="is-muted">28</span><span class="is-muted">29</span><span class="is-muted">30</span><span class="is-muted">31</span><span>1</span>
+                          <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+                          <span>9</span><span>10</span><span>11</span><span class="is-active">12</span><span>13</span><span>14</span><span>15</span>
+                          <span>16</span><span class="is-booked">17</span><span>18</span><span>19</span><span>20</span><span class="is-booked">21</span><span>22</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="venue-panel venue-summary">
+                      <small class="panel-label">Booking request</small>
+                      <div class="summary-row"><span>Date</span><strong>12 Aug 2026</strong></div>
+                      <div class="summary-row"><span>Guests</span><strong>Add guests</strong></div>
+                      <div class="summary-row"><span>Status</span><span class="status-pill">Available</span></div>
+                      <span class="mock-button">Request booking</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="project-number">01</span><span class="project-kind">Web application Â· Live</span></div>
+              <h3 class="project-title">Online Venue Booking System</h3>
+              <p class="project-desc">A venue booking application with user authentication, booking requests, date availability checking, booking status management and database integration.</p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li>Python</li><li>Flask</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://gudibanda-kalyana-mandapam.onrender.com/" target="_blank" rel="noopener noreferrer">
+                  Live demo
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/NaveenRayas/Gudibanda-Kalyana-Mandapam" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <div class="mock mock-news" aria-hidden="true">
+                <div class="mock-top">
+                  <span class="mock-dot mock-dot-red"></span><span class="mock-dot mock-dot-yellow"></span><span class="mock-dot mock-dot-green"></span>
+                  <span class="mock-url">fake-news-detection-system</span>
+                </div>
+                <div class="mock-body news-body">
+                  <div class="news-head">
+                    <div class="venue-title"><strong>Content analysis</strong><small>NLP workspace</small></div>
+                    <span class="news-badge">Zero-shot</span>
+                  </div>
+                  <div class="news-panels">
+                    <div class="news-panel">
+                      <small class="panel-label">Article input</small>
+                      <div class="skeleton skeleton-full"></div>
+                      <div class="skeleton skeleton-full"></div>
+                      <div class="skeleton skeleton-80"></div>
+                      <div class="skeleton skeleton-60"></div>
+                      <span class="mock-button mock-button-soft">Analyze content</span>
+                    </div>
+                    <div class="news-panel">
+                      <small class="panel-label">Model pipeline</small>
+                      <div class="pipeline">
+                        <span class="pipe">Classify</span><span class="pipe-arrow">â†’</span><span class="pipe pipe-violet">Rewrite</span><span class="pipe-arrow">â†’</span><span class="pipe">Compare</span>
+                      </div>
+                      <div class="news-output">
+                        <span class="output-dot"></span>
+                        <div class="output-lines"><span class="skeleton skeleton-90"></span><span class="skeleton skeleton-70"></span></div>
+                      </div>
+                      <span class="output-tag">Alternative version ready</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="project-number">02</span><span class="project-kind">NLP Â· Machine learning</span></div>
+              <h3 class="project-title">GPT-Powered Fake News Detection System</h3>
+              <p class="project-desc">An NLP-based fake news detection framework using zero-shot classification to analyze news content, paired with a text rewriting model that generates alternative versions.</p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li>Python</li><li>Flask</li><li>NLP</li><li>Hugging Face</li><li>PyTorch</li><li>Scikit-learn</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-ghost btn-sm" href="https://github.com/NaveenRayas/GPT-Powered-Fake-News-Detection-System" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <div class="mock mock-academy" aria-hidden="true">
+                <div class="mock-top">
+                  <span class="mock-dot mock-dot-red"></span><span class="mock-dot mock-dot-yellow"></span><span class="mock-dot mock-dot-green"></span>
+                  <span class="mock-url">royal-snooker-academy</span>
+                </div>
+                <div class="mock-body academy-body">
+                  <div class="academy-side">
+                    <span class="academy-logo">RS</span>
+                    <span class="side-dot is-active"></span>
+                    <span class="side-dot"></span>
+                    <span class="side-dot"></span>
+                    <span class="side-dot"></span>
+                  </div>
+                  <div class="academy-main">
+                    <div class="news-head">
+                      <div class="venue-title"><strong>Academy dashboard</strong><small>Django administration</small></div>
+                      <span class="venue-status">Signed in</span>
+                    </div>
+                    <div class="academy-stats">
+                      <div class="academy-stat"><span class="stat-icon"></span><small>Members</small></div>
+                      <div class="academy-stat"><span class="stat-icon stat-icon-violet"></span><small>Sessions</small></div>
+                      <div class="academy-stat"><span class="stat-icon stat-icon-cyan"></span><small>Bookings</small></div>
+                    </div>
+                    <div class="academy-table">
+                      <div class="table-head"><span>Overview</span><span>Status</span></div>
+                      <div class="table-row"><span class="skeleton skeleton-50"></span><span class="row-pill">Active</span></div>
+                      <div class="table-row"><span class="skeleton skeleton-70"></span><span class="row-pill row-pill-violet">Session</span></div>
+                      <div class="table-row"><span class="skeleton skeleton-40"></span><span class="row-pill row-pill-muted">Managed</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="project-number">03</span><span class="project-kind">Django Â· Team project</span></div>
+              <h3 class="project-title">Royal Snooker Academy</h3>
+              <p class="project-desc">A Django-based academy web application with authentication, session management and administrative features, built collaboratively using Git feature branching.</p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li>Python</li><li>Django</li><li>PostgreSQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-ghost btn-sm" href="https://github.com/R0hittpal/Royal_Snooker_Academy/tree/Naveen_feature_branch" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="educationTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span>05</span> Education</p>
+          <h2 class="section-title" id="educationTitle">A foundation in <span class="grad-text">computing</span>.</h2>
+          <p class="section-intro">Formal education in computer science, supported by hands-on projects and self-directed learning.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="timeline-top"><span class="timeline-date">2022 â€” 2026</span><span class="timeline-badge">Degree</span></div>
+              <h3>B.Tech in Computer Science and Engineering</h3>
+              <p class="timeline-org">Dr. Samuel George Institute of Engineering and Technology</p>
+              <p>Built a foundation in programming, databases and software development through academic coursework and hands-on projects.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="timeline-top"><span class="timeline-date">Completed</span><span class="timeline-badge">Intermediate</span></div>
+              <h3>Intermediate / Higher Secondary</h3>
+              <p>Completed higher secondary education and prepared for a degree in computer science and engineering.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="timeline-top"><span class="timeline-date">Completed</span><span class="timeline-badge">Schooling</span></div>
+              <h3>SSC / Secondary School</h3>
+              <p>Completed secondary education, building the early foundation for further study in technology.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications" aria-labelledby="certificationsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span>06</span> Certifications</p>
+          <h2 class="section-title" id="certificationsTitle">Training that <span class="grad-text">backs it up</span>.</h2>
+          <p class="section-intro">Structured learning that complements the project work, focused on full stack development, cloud and machine learning.</p>
+        </div>
+
+        <div class="cert-grid" data-stagger>
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <span class="cert-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 14.4 8l5.6.5-4.3 3.7 1.3 5.5L12 14.8 7 17.7l1.3-5.5L4 8.5 9.6 8 12 3Z"/></svg></span>
+              <span class="cert-status">Completed</span>
+            </div>
+            <p class="cert-issuer">ScholarLogic</p>
+            <h3>Python Full Stack Training</h3>
+            <p class="cert-desc">Completed a Python full stack training program with ScholarLogic.</p>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <span class="cert-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.4-7.98A5.5 5.5 0 0 1 17.3 9.2 3.5 3.5 0 0 1 17 18H7Z"/></svg></span>
+              <span class="cert-status">Completed</span>
+            </div>
+            <p class="cert-issuer">ScholarLogic</p>
+            <h3>AWS Training</h3>
+            <p class="cert-desc">Completed an AWS training program with ScholarLogic.</p>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-top">
+              <span class="cert-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 1 4 4v1a3 3 0 0 1 3 3 3 3 0 0 1-1.2 2.4A3.5 3.5 0 0 1 16 19h-1v2H9v-2H8a3.5 3.5 0 0 1-1.8-5.6A3 3 0 0 1 5 11a3 3 0 0 1 3-3V7a4 4 0 0 1 4-4Z"/><path d="M9 8h6M9 12h6M10 16h4"/></svg></span>
+              <span class="cert-status">Certified</span>
+            </div>
+            <p class="cert-issuer">ExcelR</p>
+            <h3>AI &amp; ML Certification</h3>
+            <p class="cert-desc">Certification in Artificial Intelligence and Machine Learning from ExcelR.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-main">
+            <p class="section-label"><span>07</span> Contact</p>
+            <h2 class="section-title" id="contactTitle">Let's build something <span class="grad-text">useful</span>.</h2>
+            <p>I'm open to full stack developer roles and collaborative projects. The fastest way to reach me is email.</p>
+            <div class="contact-email-row">
+              <a class="contact-email" href="mailto:naveenyuva47@gmail.com">naveenyuva47@gmail.com</a>
+              <button class="copy-btn" id="copyEmail" type="button" data-email="naveenyuva47@gmail.com" aria-label="Copy email address">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+            <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+            <div class="contact-meta">
+              <div><span>Location</span><strong>India</strong></div>
+              <div><span>Languages</span><strong>English, Kannada, Telugu</strong></div>
+              <div><span>Availability</span><strong>Open to opportunities</strong></div>
+            </div>
+          </div>
+
+          <div class="contact-side">
+            <a class="contact-link-card" href="https://www.linkedin.com/in/naveen-c-0376b834b" target="_blank" rel="noopener noreferrer">
+              <span class="contact-link-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+              </span>
+              <span class="contact-link-text"><span>LinkedIn</span><strong>naveen-c</strong></span>
+              <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="contact-link-card" href="https://github.com/NaveenRayas" target="_blank" rel="noopener noreferrer">
+              <span class="contact-link-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+              </span>
+              <span class="contact-link-text"><span>GitHub</span><strong>NaveenRayas</strong></span>
+              <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="contact-link-card" href="mailto:naveenyuva47@gmail.com">
+              <span class="contact-link-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+              </span>
+              <span class="contact-link-text"><span>Email</span><strong>naveenyuva47@gmail.com</strong></span>
+              <svg class="contact-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <div class="availability-card">
+              <span class="status-dot" aria-hidden="true"></span>
+              <div><strong>Open to full-time roles</strong><span>Full stack development Â· India</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-text">Naveen<span class="brand-dot">.</span></span>
+          <span class="sr-only">C Naveen , back to home</span>
+        </a>
+        <p>Full Stack Developer based in India, building for the web.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social-list footer-socials" role="group" aria-label="Social profiles">
+        <a class="social-link" href="https://www.linkedin.com/in/naveen-c-0376b834b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a class="social-link" href="https://github.com/NaveenRayas" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a class="social-link" href="mailto:naveenyuva47@gmail.com" aria-label="Email Naveen C">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> C Naveen . All rights reserved.</p>
+      <p>Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-5 5 5-5 5 5"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

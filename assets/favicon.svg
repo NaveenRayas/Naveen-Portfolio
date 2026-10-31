@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Naveen C monogram">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f8cff"/>
+      <stop offset="0.55" stop-color="#34e7e4"/>
+      <stop offset="1" stop-color="#9b6bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#070b16"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="15.25" fill="none" stroke="#8eaaff" stroke-opacity="0.18" stroke-width="1.5"/>
+  <path d="M18 47V17h5.4l17.2 22.4V17H46v30h-5.4L23.4 24.6V47H18Z" fill="url(#faviconGradient)"/>
+  <circle cx="49" cy="15" r="3" fill="#34e7e4"/>
+</svg>
